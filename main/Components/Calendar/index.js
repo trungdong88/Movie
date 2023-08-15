@@ -1,8 +1,6 @@
 import React, { useState } from "react"
 import { Calendar, LocaleConfig } from 'react-native-calendars';
 import { View, TouchableOpacity, StyleSheet } from "react-native"
-import { Text } from "@rneui/base";
-
 
 LocaleConfig.locales['fr'] = {
   monthNames: [
@@ -46,7 +44,6 @@ const CalendarComp = (props) => {
         headerStyle={{
           borderRadius: 10,
           backgroundColor: "#202538",
-          // height:50,
         }}
         onDayPress={day => {
           props.setSelected(day.dateString);
